@@ -47,7 +47,7 @@ You can easily used image to text in VS Code
 ```
 ### Run the Image To Text in the terminal of VS Code:
 ```
-- cd image-to-text-converter
+- cd Image Text
 - export FLASK_APP=app.py
 - set FLASK_APP=app.py
 - flask run
