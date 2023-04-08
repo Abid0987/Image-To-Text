@@ -41,12 +41,14 @@ You can easily used image to text in VS Code
 
 ### Install necessary Python libraries:
 ```
+- python -m venv venv 
 - pip install Flask
 - pip install cv2
 - pip install pytesseract
 ```
 ### Run the Image To Text in the terminal of VS Code:
 ```
+- .\venv\Scripts\activate   
 - cd Image Text
 - export FLASK_APP=app.py
 - set FLASK_APP=app.py
