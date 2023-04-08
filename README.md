@@ -30,7 +30,7 @@
 
 - Just, Clone this repository -
   ```
-  git clone --depth=1 https://github.com/Abid0987/Image-To-Texr.git
+  git clone --depth=1 https://github.com/Abid0987/Image-To-Text.git
   ```
 
 
