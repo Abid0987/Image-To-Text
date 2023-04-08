@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Image To Text</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <style>
+      /* General styles */
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #9ed9ab;
+      }
+
+      /* Heading styles */
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-top: 50px;
+      }
+
+      /* Form container styles */
+      .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px 50px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        animation-name: slide-in;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+
+      /* Animation styles */
+      @keyframes slide-in {
+        from {
+          transform: translateY(-50px);
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      /* Label styles */
+      label {
+        font-weight: 500;
+        color: #555;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      /* File input styles */
+      input[type="file"] {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        background-color: #f5f5f5;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      input[type="file"]:hover {
+        background-color: #e9e9e9;
+      }
+
+      /* Submit button styles */
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 12px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      input[type="submit"]:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3);
+      }
+
+      /* Success message styles */
+      .success-message {
+        text-align: center;
+        color: #4CAF50;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image to Text Converter</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" value="Convert">
+    </form>
+</body>
+</html>
+        
